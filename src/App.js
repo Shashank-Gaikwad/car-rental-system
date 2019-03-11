@@ -11,13 +11,17 @@ import Dashboard from './containers/Dashboard'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 import AddCar from './components/AddCar';
 import Policies from './components/Policies';
+import AskQuery from './components/AskQuery';
+import GiveFeedback from './components/GiveFeedback';
+import UpdatePassword from './components/UpdatePassword';
+import MyBookingsTable from './components/MyBookings';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <BrowserRouter>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
           <Switch>
             <Route exact path="/Home" component={Home}/>
             <Route exact path="/SignIn" component={SignIn}/>
@@ -27,11 +31,13 @@ class App extends Component {
             <Route exact path="/ContactUs" component={ContactUs}/>
             <Route exact path="/Dashboard" component={Dashboard}/>
             <Route exact path="/AddCar" component={AddCar}/>
+            <Route exact path="/AskQuery" component={AskQuery}/>
+            <Route exact path="/Feedback" component={GiveFeedback}/>
+            <Route exact path="/UpdatePassword" component={UpdatePassword}/>
+            <Route exact path="/MyBookings" component={MyBookingsTable}/>
           </Switch>
-        </BrowserRouter>
-        {/* <LogIn /> */}
-        {/* <SignUp /> */}
-      </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }

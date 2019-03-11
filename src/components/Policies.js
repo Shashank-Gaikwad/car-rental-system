@@ -424,9 +424,9 @@ For Member in Delhi & NCR:
 
                 </TabContainer>
         }
-          {value === 2 && <TabContainer>ELIGIBILITY</TabContainer>}
-          {value === 3 && <TabContainer>PRIVACY POLICY</TabContainer>}
-          {value === 4 && <TabContainer>INTER STATE TRAVEL</TabContainer>}
+          {/* {value === 2 && <TabContainer>ELIGIBILITY</TabContainer>} */}
+          {value === 2 && <TabContainer>PRIVACY POLICY</TabContainer>}
+          {value === 3 && <TabContainer>INTER STATE TRAVEL</TabContainer>}
         </div>
       </NoSsr>
     );
