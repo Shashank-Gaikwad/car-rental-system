@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 // import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
@@ -74,14 +74,15 @@ const capacity = [
     },
   ];
 
-function AddCar(props) {
-  const { classes } = props;
+class AddCar extends Component {
+  
 
 //   handleChange = name => event => {
 //     this.setState({ [name]: event.target.value });
 //   };
   
-
+  render(){
+    const { classes } = this.props;
   return (
     <main className={classes.main}>
       <CssBaseline />
@@ -175,6 +176,7 @@ function AddCar(props) {
       </Paper>
     </main>
   );
+      }
 }
 
 AddCar.propTypes = {

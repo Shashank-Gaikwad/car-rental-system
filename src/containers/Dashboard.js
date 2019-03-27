@@ -6,8 +6,8 @@ export class Dashboard extends Component {
   render() {
     return (
       <div>
-        {/* <AdminDrawer /> */}
-        <CustomerDrawer />
+        <AdminDrawer />
+        {/* <CustomerDrawer /> */}
       </div>
     )
   }

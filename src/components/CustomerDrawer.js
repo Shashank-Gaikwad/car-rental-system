@@ -24,6 +24,7 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
 import AddCar from './AddCar';
+import CustomerDashboardHome from './CustomerDashboardHome';
 
 const drawerWidth = 240;
 
@@ -183,21 +184,22 @@ class CustomerDrawer extends React.Component {
           <List>{secondaryListItems}</List>
         </Drawer>
         <main className={classes.content}>
-          {/* <div className={classes.appBarSpacer} /> */}
-          {/* <Typography variant="h4" gutterBottom component="h2">
-            Orders
-          </Typography> */}
-          {/* <Typography component="div" className={classes.chartContainer}>
-            <SimpleLineChart />
-          </Typography> */}
+          <div className={classes.appBarSpacer} />
+          <Typography variant="h4" gutterBottom component="h2">
+            {/* Orders */}
+            <CustomerDashboardHome />
+          </Typography>
+          <Typography component="div" className={classes.chartContainer}>
+            {/* <SimpleLineChart /> */}
+          </Typography>
           {/* Add component to display in empty space here*/}
-          <AddCar />
+          {/* <AddCar /> */}
           <Typography variant="h4" gutterBottom component="h2">
             {/* Products */}
           </Typography>
-          {/* <div className={classes.tableContainer}>
-            <SimpleTable />
-          </div> */}
+          <div className={classes.tableContainer}>
+            {/* <SimpleTable /> */}
+          </div>
         </main>
       </div>
     );

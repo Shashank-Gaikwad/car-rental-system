@@ -23,6 +23,13 @@ import AccountCircle from '@material-ui/icons/AccountCircle';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import AdminDashboardHome from './AdminDashboardHome'
+import TotalCustomers from './TotalCustomers';
+import TotalSuppliers from './TotalSuppliers';
+import TotalCars from './TotalCars';
+import AvailableCars from './AvailableCars';
+import ReservedCars from './ReservedCars';
+import ReportFilters from './ReportFilters';
 
 const drawerWidth = 240;
 
@@ -88,7 +95,7 @@ const styles = theme => ({
   appBarSpacer: theme.mixins.toolbar,
   content: {
     flexGrow: 1,
-    padding: theme.spacing.unit * 3,
+    // padding: theme.spacing.unit * 3,
     height: '100vh',
     overflow: 'auto',
   },
@@ -187,6 +194,13 @@ class AdminDrawer extends React.Component {
           <div className={classes.appBarSpacer} />
           <Typography variant="h4" gutterBottom component="h2">
             {/* Orders */}
+            <AdminDashboardHome />
+            <TotalCustomers />
+            <TotalSuppliers />
+            <TotalCars />
+            <AvailableCars />
+            {/* <ReservedCars /> */}
+            {/* <ReportFilters /> */}
           </Typography>
           <Typography component="div" className={classes.chartContainer}>
             {/* <SimpleLineChart /> */}

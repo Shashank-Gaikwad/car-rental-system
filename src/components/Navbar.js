@@ -31,6 +31,7 @@ const styles = {
 
 function Navbar(props) {
   const { classes } = props;
+  console.log('props received - ',classes)
   return (
     <div className={classes.root}>
       <AppBar position="static">
@@ -41,7 +42,7 @@ function Navbar(props) {
           <Typography variant="h6" color="inherit" className={classes.grow}>
             Car Rental System
           </Typography>
-          <Button color="inherit" href="/About" className={classes.link}>About Us</Button>
+          <Button color="inherit" className={classes.link} onClick={() =>{this.props.history.push('/dashboard')} }>About Us</Button>
           <Button color="inherit" href="/ContactUs" className={classes.link}>Contact Us</Button>
           <Button color="inherit" href="/SignUp" className={classes.link}>Sign Up</Button>
           <Button color="inherit" href="/SignIn" className={classes.link}>Login</Button>

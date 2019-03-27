@@ -15,6 +15,8 @@ import AskQuery from './components/AskQuery';
 import GiveFeedback from './components/GiveFeedback';
 import UpdatePassword from './components/UpdatePassword';
 import MyBookingsTable from './components/MyBookings';
+import ProfileSettings from './components/ProfileSettings';
+import BookingForm from './components/BookingForm';
 
 class App extends Component {
   render() {
@@ -35,6 +37,8 @@ class App extends Component {
             <Route exact path="/Feedback" component={GiveFeedback}/>
             <Route exact path="/UpdatePassword" component={UpdatePassword}/>
             <Route exact path="/MyBookings" component={MyBookingsTable}/>
+            <Route exact path="/ProfileSettings" component={ProfileSettings}/>
+            <Route exact path="/BookingForm" component={BookingForm}/>
           </Switch>
         </div>
       </BrowserRouter>
